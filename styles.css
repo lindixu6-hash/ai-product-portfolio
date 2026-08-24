@@ -22,18 +22,16 @@
 html {
   scroll-behavior: smooth;
   background: var(--paper);
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   color: var(--ink);
-  background:
-    linear-gradient(rgba(41, 43, 41, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(41, 43, 41, 0.035) 1px, transparent 1px),
-    var(--paper);
-  background-size: 32px 32px;
+  background: var(--paper);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   letter-spacing: 0;
+  overflow-x: hidden;
 }
 
 button,
@@ -825,12 +823,36 @@ h1 {
     padding-top: 64px;
   }
 
+  .intro-copy,
+  .intro-index,
+  .section-heading,
+  .case-stage,
+  .case-copy {
+    min-width: 0;
+  }
+
   h1 {
-    font-size: 46px;
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 1.08;
+    overflow-wrap: anywhere;
   }
 
   .intro-lede {
-    font-size: 15px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+  }
+
+  .intro-index li {
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+
+  .intro-index strong,
+  .intro-index small {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   .section-heading {
