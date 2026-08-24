@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="徐琳迪的 AI 产品与运营作品集：Coze 电商内容生成、RAG 电商导购 Agent、AI 口播 Content OS。"
+    >
+    <title>徐琳迪｜AI 产品与运营作品集</title>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="progress-line" aria-hidden="true"><span></span></div>
+
+    <header class="topbar">
+      <a class="identity" href="#top" aria-label="返回顶部">
+        <span class="identity-mark">XL</span>
+        <span>
+          <strong>徐琳迪</strong>
+          <small>AI Product × Operations</small>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="作品集导航">
+        <a href="#cases">案例</a>
+        <a href="#method">方法</a>
+        <a href="#proof">证据</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="icon-button" id="sound-toggle" type="button" aria-label="开启声效" title="开启声效">
+          <i data-lucide="volume-x"></i>
+        </button>
+        <a class="icon-button" href="https://github.com/lindixu6-hash" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="intro-band">
+        <div class="intro-copy reveal">
+          <p class="eyebrow">Selected work · 2026</p>
+          <h1>把 AI 能力变成<br>可用、可测、可复用的产品。</h1>
+          <p class="intro-lede">
+            三个真实项目，覆盖内容生产、电商决策与创作者工作流。
+            从需求拆解到 Prompt、评测、运营与交付，均由我主导推进。
+          </p>
+          <div class="intro-actions">
+            <a class="command-button primary" href="#cases">
+              <i data-lucide="play"></i>
+              查看案例
+            </a>
+            <a class="command-button secondary" href="mailto:xulindi312@163.com">
+              <i data-lucide="mail"></i>
+              联系我
+            </a>
+          </div>
+        </div>
+
+        <div class="intro-index reveal" aria-label="作品集概览">
+          <div class="index-head">
+            <span>CASE INDEX</span>
+            <span>03 / 03</span>
+          </div>
+          <ol>
+            <li>
+              <span>01</span>
+              <strong>Coze 电商内容生成</strong>
+              <small>Workflow / GenAI / Automation</small>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>RAG 电商导购 Agent</strong>
+              <small>Search / Decision / Evaluation</small>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>AI 口播 Content OS</strong>
+              <small>Skill / Human Gate / Growth</small>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-browser" id="cases">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Case library</p>
+          <h2>项目不是概念，是可验证的交付。</h2>
+          <p>选择一个案例，查看原片、产品链路与结果证据。</p>
+        </div>
+
+        <div class="case-tabs" role="tablist" aria-label="选择项目">
+          <button class="case-tab is-active" type="button" data-case="coze" role="tab" aria-selected="true">
+            <span>01</span>
+            <strong>Coze 电商</strong>
+          </button>
+          <button class="case-tab" type="button" data-case="shopping" role="tab" aria-selected="false">
+            <span>02</span>
+            <strong>导购 Agent</strong>
+          </button>
+          <button class="case-tab" type="button" data-case="content" role="tab" aria-selected="false">
+            <span>03</span>
+            <strong>口播 Skill</strong>
+          </button>
+        </div>
+
+        <article class="case-stage reveal" data-case-panel="coze">
+          <div class="case-visual">
+            <video
+              class="preview-video"
+              src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/coze-hat-demo.mp4"
+              muted
+              playsinline
+              preload="metadata"
+            ></video>
+            <div class="video-scrim">
+              <span class="duration">02:14 · 完整原片</span>
+              <button
+                class="play-button"
+                type="button"
+                data-video-title="Coze 帽子电商 AI 内容生成"
+                data-video-src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/coze-hat-demo.mp4"
+              >
+                <i data-lucide="play"></i>
+                播放原片
+              </button>
+            </div>
+          </div>
+
+          <div class="case-copy">
+            <div class="case-meta">
+              <span>Workflow Product</span>
+              <span>2026.02—06</span>
+            </div>
+            <h3>Coze 电商 AI 内容生成系统</h3>
+            <p class="case-thesis">
+              将商品图、场景图、短视频与平台文案串成一条可重复运行的内容生产线，
+              让商家不再依赖反复拍摄。
+            </p>
+            <div class="metric-row">
+              <div><strong data-count="10">&lt;10</strong><span>分钟 / 组</span></div>
+              <div><strong data-count="8">8</strong><span>张一致性图片</span></div>
+              <div><strong data-count="5">5</strong><span>支短视频</span></div>
+            </div>
+            <div class="case-detail-grid">
+              <div>
+                <span class="detail-label">我负责</span>
+                <p>需求访谈、PRD、Prompt 规则、Coze 工作流、模型 A/B、飞书归档。</p>
+              </div>
+              <div>
+                <span class="detail-label">关键判断</span>
+                <p>商品还原优先于氛围；最终选择更符合本土审美的 Seedream 方案。</p>
+              </div>
+            </div>
+            <div class="case-actions">
+              <a class="text-link" href="https://github.com/lindixu6-hash/coze-hat-content-gen" target="_blank" rel="noreferrer">
+                查看源码与 PRD <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-stage is-hidden" data-case-panel="shopping">
+          <div class="case-visual">
+            <video
+              class="preview-video"
+              src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/shopping-agent-demo.mp4"
+              muted
+              playsinline
+              preload="metadata"
+            ></video>
+            <div class="video-scrim">
+              <span class="duration">01:52 · 完整原片</span>
+              <button
+                class="play-button"
+                type="button"
+                data-video-title="基于 RAG 的多模态电商导购 Agent"
+                data-video-src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/shopping-agent-demo.mp4"
+              >
+                <i data-lucide="play"></i>
+                播放原片
+              </button>
+            </div>
+          </div>
+
+          <div class="case-copy">
+            <div class="case-meta">
+              <span>AI Product</span>
+              <span>2026.08</span>
+            </div>
+            <h3>基于 RAG 的多模态电商导购 Agent</h3>
+            <p class="case-thesis">
+              把“搜索商品”改写成“理解需求并完成决策”，让模糊表达、图片输入与商品比较进入同一条导购链路。
+            </p>
+            <div class="metric-row">
+              <div><strong data-count="6">6</strong><span>步产品链路</span></div>
+              <div><strong data-count="5">5</strong><span>类核心意图</span></div>
+              <div><strong data-count="7">7</strong><span>项评估指标</span></div>
+            </div>
+            <div class="case-detail-grid">
+              <div>
+                <span class="detail-label">产品链路</span>
+                <p>需求理解 → 意图识别 → RAG 召回 → 推荐生成 → 结果交互 → 数据反馈。</p>
+              </div>
+              <div>
+                <span class="detail-label">评估口径</span>
+                <p>点击、加购、转化、追问、任务完成、改写与满意度共同判断 MVP。</p>
+              </div>
+            </div>
+            <div class="case-actions">
+              <a class="text-link" href="https://github.com/lindixu6-hash/ai-shopping-skill" target="_blank" rel="noreferrer">
+                查看 Skill 源码 <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-stage is-hidden" data-case-panel="content">
+          <div class="case-visual portrait">
+            <video
+              class="preview-video"
+              src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/content-os-demo.mp4"
+              muted
+              playsinline
+              preload="metadata"
+            ></video>
+            <div class="video-scrim">
+              <span class="duration">02:33 · 口播原片</span>
+              <button
+                class="play-button"
+                type="button"
+                data-video-title="AI 口播 Content OS 成片"
+                data-video-src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/content-os-demo.mp4"
+              >
+                <i data-lucide="play"></i>
+                播放原片
+              </button>
+            </div>
+          </div>
+
+          <div class="case-copy">
+            <div class="case-meta">
+              <span>Agent Skill</span>
+              <span>2026.08</span>
+            </div>
+            <h3>AI 口播 Content OS</h3>
+            <p class="case-thesis">
+              不让 AI 一次性写“正确废话”，而是用四阶段状态机保留创作者判断权，
+              让选题、机制、真实经历与成片各自接受人工确认。
+            </p>
+            <div class="metric-row">
+              <div><strong data-count="4">4</strong><span>阶段状态机</span></div>
+              <div><strong data-count="3">3</strong><span>个人工门</span></div>
+              <div><strong data-count="7800">7.8k</strong><span>实测播放</span></div>
+            </div>
+            <div class="case-detail-grid">
+              <div>
+                <span class="detail-label">工作流</span>
+                <p>播种 → 发芽 → 成长 → 修剪；每一步只解决一个问题。</p>
+              </div>
+              <div>
+                <span class="detail-label">实测结果</span>
+                <p>单支视频获得 7,800+ 播放、100 收藏与 22 新增关注。</p>
+              </div>
+            </div>
+            <div class="case-actions">
+              <a class="text-link" href="https://github.com/lindixu6-hash/ai-content-workflow-skills" target="_blank" rel="noreferrer">
+                查看开源 Skills <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="method-band" id="method">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Working method</p>
+          <h2>我的工作不是“会用 AI”，而是建立边界。</h2>
+        </div>
+        <ol class="method-track">
+          <li class="reveal">
+            <span>01</span>
+            <div>
+              <h3>定义真实问题</h3>
+              <p>先确定用户、任务和状态变化，再决定是否需要 AI。</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span>02</span>
+            <div>
+              <h3>选择能力组合</h3>
+              <p>模型、RAG、Prompt、工作流和交互按风险与成本组合。</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span>03</span>
+            <div>
+              <h3>建立人工门</h3>
+              <p>关键判断不自动化；用户与评审者保留最终决策权。</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span>04</span>
+            <div>
+              <h3>用数据复盘</h3>
+              <p>指标、Bad Case 和用户反馈共同决定下一轮迭代。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="proof-band" id="proof">
+        <div class="proof-copy reveal">
+          <p class="eyebrow">Operational proof</p>
+          <h2>内容、增长、评测与工程协作，在同一条能力链上。</h2>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-item reveal">
+            <strong>90%+</strong>
+            <span>AI 模型离线 Precision</span>
+          </div>
+          <div class="proof-item reveal">
+            <strong>75%</strong>
+            <span>AI 视频单场景成本下降</span>
+          </div>
+          <div class="proof-item reveal">
+            <strong>10万</strong>
+            <span>海外 KOL 合作曝光</span>
+          </div>
+          <div class="proof-item reveal">
+            <strong>1.4k★</strong>
+            <span>开源 Agent 项目协作者</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>徐琳迪 · AI Product × Operations</span>
+      <span>Shanghai · 2026</span>
+    </footer>
+
+    <dialog class="video-dialog" id="video-dialog">
+      <div class="dialog-head">
+        <div>
+          <span>FULL-LENGTH DEMO</span>
+          <strong id="dialog-title">项目原片</strong>
+        </div>
+        <button class="icon-button" id="dialog-close" type="button" aria-label="关闭视频" title="关闭">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <video id="dialog-video" controls playsinline preload="metadata"></video>
+    </dialog>
+  </body>
+</html>
