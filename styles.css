@@ -133,25 +133,19 @@ video {
   color: #999;
   font-size: 12px;
   letter-spacing: 0.08em;
+  margin-bottom: 56px;
 }
 
-/* ── About ── */
-.about {
-  border-top: 1px solid #d8d7d2;
-}
-
-.about-grid {
+.about-inline {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
-}
-
-.about-text .about-info-col {
-  min-width: 0;
+  padding-top: 48px;
+  border-top: 1px solid #d8d7d2;
 }
 
 .about-info-col {
-  padding-top: 0;
+  min-width: 0;
 }
 
 .cv-label {
@@ -285,7 +279,7 @@ video {
     max-width: 340px;
   }
 
-  .about-grid {
+  .about-inline {
     grid-template-columns: 1fr;
     gap: 28px;
   }
@@ -325,7 +319,7 @@ video {
     max-width: 260px;
   }
 
-  .about-grid {
+  .about-inline {
     grid-template-columns: 1fr;
     gap: 24px;
   }
