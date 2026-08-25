@@ -3,236 +3,185 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="徐琳迪的 AI 产品与运营作品集：Coze 电商内容生成、RAG 电商导购 Agent、AI 口播 Content OS。"
-    >
-    <title>徐琳迪｜AI 产品与运营作品集</title>
-    <link rel="preconnect" href="https://unpkg.com">
+    <title>徐琳迪 · Portfolio 2026</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <div class="page-progress" aria-hidden="true"><span></span></div>
-
-    <header class="site-header">
-      <a class="identity" href="#top" aria-label="返回顶部">
-        <span class="identity-mark">XL</span>
-        <span>
-          <strong>徐琳迪</strong>
-          <small>AI Product · Operations</small>
-        </span>
-      </a>
-
-      <nav aria-label="作品集导航">
-        <a href="#work">项目</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="icon-button" id="sound-toggle" type="button" aria-label="开启界面声效" title="开启界面声效">
-          <i data-lucide="volume-x"></i>
-        </button>
-        <a
-          class="icon-button"
-          href="https://github.com/lindixu6-hash"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="GitHub"
-          title="GitHub"
-        >
-          <i data-lucide="code-2"></i>
-        </a>
+    <!-- 封面 -->
+    <section class="page cover" id="top">
+      <header class="cover-head">
+        <h1>徐琳迪</h1>
+        <div class="cover-meta">
+          <span>2026</span>
+          <span>Portfolio</span>
+        </div>
+      </header>
+      <div class="cover-media">
+        <video
+          src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/coze-hat-demo.mp4"
+          muted
+          playsinline
+          loop
+          preload="metadata"
+          aria-label="Coze 电商 AI 内容生成系统演示"
+        ></video>
       </div>
-    </header>
+      <p class="cover-sub">AI Product &amp; Operations — 三个从需求到交付的真实项目</p>
+    </section>
 
-    <main id="top">
-      <section class="masthead">
-        <div class="masthead-title reveal">
-          <p class="kicker">Selected work / 2026</p>
-          <h1>AI 产品与<br>运营作品集</h1>
-        </div>
-        <div class="masthead-note reveal">
-          <p>
-            三项已落地项目。重点呈现问题定义、产品链路、人工决策与真实结果，
-            而不是模型能力清单。
-          </p>
-          <dl>
-            <div><dt>方向</dt><dd>AI 产品 / AI 运营</dd></div>
-            <div><dt>地点</dt><dd>上海</dd></div>
-            <div><dt>联系</dt><dd><a href="mailto:xulindi312@163.com">xulindi312@163.com</a></dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="work-index" id="work" aria-label="项目目录">
-        <p>Work index</p>
-        <a href="#coze"><span>01</span><strong>Coze 电商内容生成</strong><em>Workflow</em></a>
-        <a href="#shopping"><span>02</span><strong>RAG 电商导购</strong><em>Agent</em></a>
-        <a href="#content-os"><span>03</span><strong>AI 口播 Content OS</strong><em>Skill</em></a>
-      </section>
-
-      <section class="case-section case-coze" id="coze">
-        <header class="case-heading reveal">
-          <div>
-            <p class="case-number">01 / Workflow product</p>
-            <h2>Coze 电商 AI<br>内容生成系统</h2>
-          </div>
-          <p class="case-summary">
-            把商品图、场景图、短视频与平台文案串成一条可重复运行的内容生产线，
-            将单组素材制作从 2–3 天压缩到 10 分钟以内。
-          </p>
-        </header>
-
-        <div class="case-media landscape reveal">
-          <video
-            src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/coze-hat-demo.mp4"
-            controls
-            muted
-            playsinline
-            loop
-            preload="metadata"
-            aria-label="Coze 电商 AI 内容生成系统完整演示"
-          ></video>
-          <span class="video-badge"><i data-lucide="play"></i> 02:14</span>
+    <!-- About / CV -->
+    <section class="page about" id="about">
+      <div class="cv-grid">
+        <div class="cv-col">
+          <p class="cv-label">徐琳迪</p>
+          <p>AI 产品 / AI 运营</p>
+          <p class="cv-light">上海</p>
+          <p class="cv-light"><a href="mailto:xulindi312@163.com">xulindi312@163.com</a></p>
+          <p class="cv-light"><a href="https://github.com/lindixu6-hash" target="_blank" rel="noreferrer">github.com/lindixu6-hash</a></p>
         </div>
 
-        <div class="case-facts reveal">
-          <dl class="metrics">
-            <div><dt>&lt;10 min</dt><dd>单组交付</dd></div>
-            <div><dt>8 + 5</dt><dd>图片 / 视频</dd></div>
-            <div><dt>75%</dt><dd>单场景成本下降</dd></div>
-          </dl>
-          <div class="fact-columns">
-            <article>
-              <span>问题</span>
-              <p>商家反复拍摄成本高，同一商品跨场景输出时还原度与人物一致性不稳定。</p>
-            </article>
-            <article>
-              <span>我负责</span>
-              <p>需求访谈、PRD、Prompt 规则、Coze 工作流、模型 A/B 与飞书归档。</p>
-            </article>
-            <article>
-              <span>关键决策</span>
-              <p>先保证商品版型、颜色与材质，再讨论氛围；最终采用更符合本土审美的生成方案。</p>
-            </article>
-          </div>
-          <a class="inline-link" href="https://github.com/lindixu6-hash/coze-hat-content-gen" target="_blank" rel="noreferrer">
-            源码与 PRD <i data-lucide="arrow-up-right"></i>
-          </a>
-        </div>
-      </section>
-
-      <section class="case-section case-shopping" id="shopping">
-        <header class="case-heading reveal">
-          <div>
-            <p class="case-number">02 / AI product</p>
-            <h2>RAG 多模态<br>电商导购 Agent</h2>
-          </div>
-          <p class="case-summary">
-            将“搜索商品”重写成“理解需求并完成决策”，让模糊表达、图片输入与商品比较
-            进入同一条导购链路。
-          </p>
-        </header>
-
-        <div class="case-media landscape reveal">
-          <video
-            src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/shopping-agent-demo.mp4"
-            controls
-            muted
-            playsinline
-            loop
-            preload="metadata"
-            aria-label="RAG 多模态电商导购 Agent 完整演示"
-          ></video>
-          <span class="video-badge"><i data-lucide="play"></i> 01:52</span>
+        <div class="cv-col">
+          <p class="cv-label">Character</p>
+          <p>国际中文教育硕士，毕业论文研究 AI 写作反馈模型。兼具语言学/教育学背景与 AI 产品实战经验，对内容创作和用户情感连接有深刻理解。英语专八。</p>
         </div>
 
-        <div class="case-facts reveal">
-          <dl class="metrics">
-            <div><dt>6</dt><dd>步产品链路</dd></div>
-            <div><dt>5</dt><dd>类核心意图</dd></div>
-            <div><dt>7</dt><dd>项评估指标</dd></div>
-          </dl>
-          <div class="fact-columns">
-            <article>
-              <span>链路</span>
-              <p>需求理解 → 意图识别 → RAG 召回 → 推荐生成 → 结果交互 → 数据反馈。</p>
-            </article>
-            <article>
-              <span>输入</span>
-              <p>覆盖明确搜索、模糊需求、图片辅助、场景推荐与多商品对比。</p>
-            </article>
-            <article>
-              <span>验证</span>
-              <p>以点击、加购、转化、追问、任务完成、改写和满意度共同判断 MVP。</p>
-            </article>
-          </div>
-          <a class="inline-link" href="https://github.com/lindixu6-hash/ai-shopping-skill" target="_blank" rel="noreferrer">
-            查看 Skill <i data-lucide="arrow-up-right"></i>
-          </a>
+        <div class="cv-col">
+          <p class="cv-label">Education</p>
+          <p>郑州大学 · 国际中文教育 硕士<br><span class="cv-light">2024.09 – 2027.06 · GPA 4.0/4.3</span></p>
+          <p>河南牧业经济学院 · 商务英语 本科<br><span class="cv-light">2020.09 – 2024.06</span></p>
+
+          <p class="cv-label" style="margin-top:28px">Experience</p>
+          <p>字节跳动 · TikTok 内容安全数据运营<br><span class="cv-light">2026.05 – 2026.09 · 上海</span></p>
+          <p>上海酷奇奇智能科技 · AI 产品经理<br><span class="cv-light">2026.03 – 2026.05 · 北京</span></p>
+          <p>北京瞬歌智能科技 · OpenCreator 海外增长运营<br><span class="cv-light">2025.10 – 2025.12 · Remote</span></p>
         </div>
-      </section>
 
-      <section class="case-section case-content" id="content-os">
-        <header class="case-heading reveal">
-          <div>
-            <p class="case-number">03 / Creator tool</p>
-            <h2>AI 口播<br>Content OS</h2>
-          </div>
-          <p class="case-summary">
-            把“选题 → 口播稿 → 视频成片”拆成四个有状态阶段。
-            AI 执行重复劳动，创作者只保留三个关键决定。
-          </p>
-        </header>
-
-        <div class="portrait-layout">
-          <div class="case-media portrait reveal">
-            <video
-              src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/content-os-douyin-h264.mp4"
-              controls
-              muted
-              playsinline
-              loop
-              preload="metadata"
-              aria-label="AI 口播 Content OS 抖音实测原片"
-            ></video>
-            <span class="video-badge"><i data-lucide="play"></i> 01:51</span>
-          </div>
-
-          <div class="content-dossier reveal">
-            <div class="douyin-note">
-              <span>Published on Douyin · 2026.08.01</span>
-              <strong>10 分钟，用 AI<br>完成口播稿和视频成片</strong>
-              <a href="https://v.douyin.com/C05KBp_7wNk/" target="_blank" rel="noreferrer">
-                查看抖音原作 <i data-lucide="arrow-up-right"></i>
-              </a>
-            </div>
-
-            <ol class="pipeline" aria-label="口播内容工作流">
-              <li><span>播种</span><p>确认主题、人群和看完后应发生的变化。</p></li>
-              <li><span>发芽</span><p>生成四个机制不同的角度，由创作者选择主线。</p></li>
-              <li><span>成长</span><p>把真实经历、平台策略与选定角度写成完整初稿。</p></li>
-              <li><span>修剪</span><p>诊断 AI 味、表达效率与认知落差，确认后再改写。</p></li>
-            </ol>
-
-            <dl class="metrics metrics-vertical">
-              <div><dt>7,800+</dt><dd>实测播放</dd></div>
-              <div><dt>100</dt><dd>收藏</dd></div>
-              <div><dt>22</dt><dd>新增关注</dd></div>
-            </dl>
-
-            <a class="inline-link" href="https://github.com/lindixu6-hash/ai-content-workflow-skills" target="_blank" rel="noreferrer">
-              开源 Workflow 与 Skills <i data-lucide="arrow-up-right"></i>
-            </a>
-          </div>
+        <div class="cv-col">
+          <p class="cv-label">Skills</p>
+          <p>Prompt Engineering<br>Agent / AI Workflow 设计<br>LLM 效果评估 · Bad Case 归因<br>RAG · Coze · Dify</p>
+          <p class="cv-label" style="margin-top:28px">Tools</p>
+          <p>Python · SQL · PostHog<br>Playwright · GitHub<br>飞书多维表格 · Excel</p>
+          <p class="cv-label" style="margin-top:28px">Languages</p>
+          <p>英语专八（TEM-8）<br>高中英语教师资格证</p>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-      <span>徐琳迪 · AI Product & Operations</span>
-      <span>Shanghai · 2026</span>
+    <!-- 项目 01 -->
+    <section class="page project" id="coze">
+      <div class="proj-head">
+        <span class="proj-num">01</span>
+        <div>
+          <h2>Coze 电商 AI<br>内容生成系统</h2>
+          <p class="proj-meta">Workflow Product · 2026.02 – 06</p>
+        </div>
+      </div>
+
+      <div class="proj-media">
+        <video
+          src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/coze-hat-demo.mp4"
+          muted
+          playsinline
+          loop
+          preload="metadata"
+          aria-label="Coze 电商 AI 内容生成系统完整演示"
+        ></video>
+      </div>
+
+      <div class="proj-text">
+        <div class="proj-col">
+          <p class="cv-label">问题</p>
+          <p>商家反复拍摄成本高，同一商品跨场景输出时还原度与人物一致性不稳定。单组素材制作周期 2–3 天。</p>
+        </div>
+        <div class="proj-col">
+          <p class="cv-label">我负责</p>
+          <p>需求访谈、PRD、Prompt 规则设计、Coze 工作流搭建、模型 A/B 对比与飞书归档闭环。</p>
+        </div>
+        <div class="proj-col">
+          <p class="cv-label">结果</p>
+          <p>单组素材从 2–3 天压缩至 10 分钟以内；自动产出 8 张同模特多角度图与 5 支短视频；获得电商客户正向反馈，延伸至童帽及选股智能体方向。<br><a href="https://github.com/lindixu6-hash/coze-hat-content-gen" target="_blank" rel="noreferrer">源码与 PRD ↗</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目 02 -->
+    <section class="page project" id="shopping">
+      <div class="proj-head">
+        <span class="proj-num">02</span>
+        <div>
+          <h2>RAG 多模态<br>电商导购 Agent</h2>
+          <p class="proj-meta">AI Product · 2026.08</p>
+        </div>
+      </div>
+
+      <div class="proj-media">
+        <video
+          src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/shopping-agent-demo.mp4"
+          muted
+          playsinline
+          loop
+          preload="metadata"
+          aria-label="RAG 多模态电商导购 Agent 完整演示"
+        ></video>
+      </div>
+
+      <div class="proj-text">
+        <div class="proj-col">
+          <p class="cv-label">链路</p>
+          <p>需求理解 → 意图识别 → RAG 检索召回 → 推荐生成 → 结果交互 → 数据反馈，六步智能导购。</p>
+        </div>
+        <div class="proj-col">
+          <p class="cv-label">输入</p>
+          <p>覆盖明确搜索、模糊需求、图片辅助、场景推荐与多商品对比五类核心意图。</p>
+        </div>
+        <div class="proj-col">
+          <p class="cv-label">验证</p>
+          <p>定义推荐点击率、加购率、转化率、追问率、任务完成率、改写率与满意度共七项 MVP 评估指标。<br><a href="https://github.com/lindixu6-hash/ai-shopping-skill" target="_blank" rel="noreferrer">查看 Skill ↗</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目 03 -->
+    <section class="page project" id="content-os">
+      <div class="proj-head">
+        <span class="proj-num">03</span>
+        <div>
+          <h2>AI 口播<br>Content OS</h2>
+          <p class="proj-meta">Creator Tool · 2026.08</p>
+        </div>
+      </div>
+
+      <div class="proj-media portrait-media">
+        <video
+          src="https://github.com/lindixu6-hash/ai-product-portfolio/releases/download/v1.0.0/content-os-douyin-h264.mp4"
+          muted
+          playsinline
+          loop
+          preload="metadata"
+          aria-label="AI 口播 Content OS 抖音实测原片"
+        ></video>
+      </div>
+
+      <div class="proj-text">
+        <div class="proj-col">
+          <p class="cv-label">方法</p>
+          <p>把"选题 → 口播稿 → 视频成片"拆成播种、发芽、成长、修剪四个有状态阶段。AI 执行重复劳动，创作者只保留三个关键决定。</p>
+        </div>
+        <div class="proj-col">
+          <p class="cv-label">实测</p>
+          <p>抖音实测视频获 7,800+ 播放、100 收藏、22 新增关注。近 7 天创作者中心总播放 2.44 万，超 99.6% 同类创作者。</p>
+        </div>
+        <div class="proj-col">
+          <p class="cv-label">开源</p>
+          <p>Workflow 与 Skills 已开源，包含管线校验工具与质量评分。<br><a href="https://github.com/lindixu6-hash/ai-content-workflow-skills" target="_blank" rel="noreferrer">开源仓库 ↗</a> &nbsp; <a href="https://v.douyin.com/C05KBp_7wNk/" target="_blank" rel="noreferrer">抖音原作 ↗</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-end">
+      <span>徐琳迪 · 2026</span>
+      <span>Shanghai</span>
     </footer>
   </body>
 </html>
