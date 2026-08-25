@@ -69,6 +69,16 @@ video {
 .cover-head h1 {
   font-size: 26px;
   line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.cover-name-en {
+  margin: 0;
+  color: #aaa;
+  font-family: Georgia, "Source Han Serif SC", serif;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .cover-meta {
@@ -129,7 +139,14 @@ video {
   color: #999;
   font-size: 12px;
   letter-spacing: 0.08em;
-  margin-bottom: 56px;
+  margin-bottom: 4px;
+}
+
+.cover-tip {
+  color: #c4c4c4;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  margin: 0 0 56px;
 }
 
 .about-inline {
