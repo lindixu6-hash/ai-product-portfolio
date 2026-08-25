@@ -108,27 +108,27 @@ video {
   text-transform: uppercase;
 }
 
-/* ── About / CV ── */
+/* ── About ── */
 .about {
   border-top: 1px solid #d8d7d2;
 }
 
-.cv-grid {
+.about-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  gap: 64px;
+  align-items: start;
 }
 
-.cv-col {
-  min-width: 0;
-}
-
-.cv-photo {
+.about-photo {
   display: block;
-  width: 140px;
+  width: 100%;
   height: auto;
-  margin-bottom: 16px;
-  filter: grayscale(0.15) contrast(0.97);
+  filter: grayscale(0.1) contrast(0.98);
+}
+
+.about-info-col {
+  padding-top: 8px;
 }
 
 .cv-label {
@@ -249,9 +249,13 @@ video {
   .cover-head h1 { font-size: 24px; }
   .cover-meta { font-size: 13px; }
 
-  .cv-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px 28px;
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-photo {
+    max-width: 320px;
   }
 
   .proj-head h2 { font-size: 26px; }
@@ -276,9 +280,13 @@ video {
     padding: 44px 0 56px;
   }
 
-  .cv-grid {
+  .about-grid {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 24px;
+  }
+
+  .about-photo {
+    max-width: 260px;
   }
 
   .proj-head {
