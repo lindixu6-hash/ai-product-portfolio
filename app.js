@@ -40,17 +40,27 @@ document.querySelectorAll("a[href^='#']").forEach((link) => {
   link.addEventListener("click", () => playTone(360));
 });
 
-document.querySelectorAll(".video-launch").forEach((button) => {
-  const video = button.previousElementSibling;
+document.querySelectorAll(".case-media").forEach((container) => {
+  const video = container.querySelector("video");
+  if (!video) return;
 
-  button.addEventListener("click", () => {
-    button.classList.add("is-hidden");
-    video.play();
-    playTone(520, 0.12);
+  container.addEventListener("mouseenter", () => {
+    video.currentTime = 0;
+    video.muted = true;
+    video.play().catch(() => {});
   });
 
-  video.addEventListener("play", () => button.classList.add("is-hidden"));
-  video.addEventListener("ended", () => button.classList.remove("is-hidden"));
+  container.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+
+  container.addEventListener("click", (event) => {
+    if (event.target === video) return;
+    video.muted = false;
+    video.play().catch(() => {});
+    playTone(520, 0.1);
+  });
 });
 
 const revealObserver = new IntersectionObserver(

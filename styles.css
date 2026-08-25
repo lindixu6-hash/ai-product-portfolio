@@ -323,8 +323,9 @@ dd {
 
 .case-media {
   position: relative;
-  background: var(--ink);
+  background: var(--paper-deep);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .case-media.landscape {
@@ -336,56 +337,43 @@ dd {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  background: var(--paper-deep);
+}
+
+.case-media.portrait video {
   object-fit: contain;
-  background: #151715;
 }
 
-.video-launch {
+.video-badge {
   position: absolute;
-  inset: 0;
-  display: grid;
-  grid-template-columns: 54px auto;
-  align-content: center;
-  justify-content: center;
-  gap: 14px;
-  border: 0;
-  color: var(--white);
-  background: rgba(25, 27, 25, 0.2);
-  cursor: pointer;
-  transition: background 220ms ease;
+  top: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  background: rgba(25, 27, 25, 0.62);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 200ms ease;
 }
 
-.video-launch:hover {
-  background: rgba(25, 27, 25, 0.08);
-}
-
-.video-launch > svg {
-  width: 54px;
-  height: 54px;
-  padding: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 50%;
+.video-badge svg {
+  width: 12px;
+  height: 12px;
   fill: currentColor;
 }
 
-.video-launch > span {
-  align-self: center;
-  text-align: left;
-  font-family: Georgia, serif;
-  font-size: 20px;
-  line-height: 1.1;
-}
-
-.video-launch small {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.video-launch.is-hidden {
-  display: none;
+.case-media:hover .video-badge,
+.case-media video:focus + .video-badge {
+  opacity: 0;
 }
 
 .case-facts {
@@ -698,14 +686,16 @@ footer {
     margin-left: -16px;
   }
 
-  .video-launch {
-    grid-template-columns: 46px auto;
+  .video-badge {
+    top: 10px;
+    left: 10px;
+    padding: 4px 9px;
+    font-size: 10px;
   }
 
-  .video-launch > svg {
-    width: 46px;
-    height: 46px;
-    padding: 13px;
+  .video-badge svg {
+    width: 11px;
+    height: 11px;
   }
 
   .case-facts {
