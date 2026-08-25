@@ -55,12 +55,8 @@ video {
 
 /* ── Cover ── */
 .cover {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-top: 56px;
-  padding-bottom: 56px;
+  padding-bottom: 80px;
 }
 
 .cover-head {
