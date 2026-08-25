@@ -59,19 +59,19 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .cover-head {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .cover-head h1 {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.2;
 }
 
@@ -79,7 +79,7 @@ video {
   text-align: right;
   font-family: "Source Han Serif SC", "Songti SC", Georgia, serif;
   color: #999;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
@@ -88,9 +88,34 @@ video {
   display: block;
 }
 
+.cover-body {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 400px);
+  gap: 56px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.cover-title-cn {
+  font-family: "Source Han Serif SC", "Songti SC", "STSong", Georgia, serif;
+  font-size: clamp(56px, 9vw, 110px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: #2c2c2c;
+  margin: 0 0 16px;
+}
+
+.cover-title-en {
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .cover-photo {
   width: 100%;
-  margin-bottom: 28px;
   overflow: hidden;
 }
 
@@ -98,9 +123,9 @@ video {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 68vh;
+  max-height: 52vh;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 25%;
   filter: grayscale(0.08) contrast(0.98);
 }
 
@@ -108,7 +133,6 @@ video {
   color: #999;
   font-size: 12px;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 /* ── About ── */
@@ -248,6 +272,19 @@ video {
   .cover-head h1 { font-size: 24px; }
   .cover-meta { font-size: 13px; }
 
+  .cover-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cover-title-cn {
+    font-size: 52px;
+  }
+
+  .cover-photo {
+    max-width: 340px;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -273,6 +310,19 @@ video {
   .page {
     width: calc(100% - 28px);
     padding: 44px 0 56px;
+  }
+
+  .cover-body {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cover-title-cn {
+    font-size: 44px;
+  }
+
+  .cover-photo {
+    max-width: 260px;
   }
 
   .about-grid {
