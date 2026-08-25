@@ -123,6 +123,14 @@ video {
   min-width: 0;
 }
 
+.cv-photo {
+  display: block;
+  width: 140px;
+  height: auto;
+  margin-bottom: 16px;
+  filter: grayscale(0.15) contrast(0.97);
+}
+
 .cv-label {
   font-family: "Source Han Serif SC", "Songti SC", Georgia, serif;
   font-size: 14px;
