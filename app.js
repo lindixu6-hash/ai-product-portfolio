@@ -1,5 +1,5 @@
-// Hover autoplay for all videos
-document.querySelectorAll(".cover-media, .proj-media").forEach((container) => {
+// Hover autoplay for project videos
+document.querySelectorAll(".proj-media").forEach((container) => {
   const video = container.querySelector("video");
   if (!video) return;
 
